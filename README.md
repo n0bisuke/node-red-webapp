@@ -3,7 +3,7 @@
  
 | For Windows Web App | For Linux Web App|
 | :-: | :-: |
-|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzuhito%2Fnode-red-webapp%2Fmaster%2Fazuredeploy.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzuhito%2Fnode-red-webapp%2Fmaster%2Fazuredeploy_linux.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|
+|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhorihiro%2Fnode-red-webapp%2Fmaster%2Fazuredeploy.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhorihiro%2Fnode-red-webapp%2Fmaster%2Fazuredeploy_linux.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|
 
 
 This Node-RED includes nodes for Azure services.
@@ -15,19 +15,19 @@ This Node-RED includes nodes for Azure services.
 - node-red-contrib-azure-sql
 - node-red-contrib-azureiothubnode
 
-![node-red](https://raw.githubusercontent.com/zuhito/node-red-webapp/master/nodered.png)
+![node-red](https://raw.githubusercontent.com/horihiro/node-red-webapp/master/nodered.png)
 
 # Deploy to Azure Web App
 (1) Click deploy button
 
 | For Windows Web App | For Linux Web App|
 | :-: | :-: |
-|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzuhito%2Fnode-red-webapp%2Fmaster%2Fazuredeploy.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fzuhito%2Fnode-red-webapp%2Fmaster%2Fazuredeploy_linux.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|
+|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhorihiro%2Fnode-red-webapp%2Fmaster%2Fazuredeploy.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhorihiro%2Fnode-red-webapp%2Fmaster%2Fazuredeploy_linux.json" target="_blank">    <img src="https://azuredeploy.net/deploybutton.svg"/></a>|
 
 (2) Input resource group, site name and hosting plan name.
 
-![azure_setting1](https://raw.githubusercontent.com/zuhito/node-red-webapp/master/azure_setting1.png)
+![azure_setting1](https://raw.githubusercontent.com/horihiro/node-red-webapp/master/azure_setting1.png)
 
 (3) After deployment, enable websocket and always on.
 
-![azure_setting2](https://raw.githubusercontent.com/zuhito/node-red-webapp/master/azure_setting2.png)
+![azure_setting2](https://raw.githubusercontent.com/horihiro/node-red-webapp/master/azure_setting2.png)
