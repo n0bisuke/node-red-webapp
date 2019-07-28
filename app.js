@@ -16,6 +16,7 @@ var settings = {
     httpAdminRoot:"/",
     httpNodeRoot: "/",
     userDir:".",
+    flowFile: "flows_" + (process.env.WEBSITE_SITE_NAME || process.env.APPSETTINGS_WEBSITE_SITE_NAME ? process.env.WEBSITE_SITE_NAME || process.env.APPSETTINGS_WEBSITE_SITE_NAME : require('os').hostname()) + ".json",
     functionGlobalContext: { }    // enables global context
 };
 
