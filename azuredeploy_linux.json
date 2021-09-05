@@ -53,7 +53,7 @@
     },
     "branch": {
       "type": "string",
-      "defaultValue": "master",
+      "defaultValue": "premerged",
       "metadata": {
         "description": "The branch of the GitHub repository to use."
       }
@@ -89,7 +89,7 @@
       "properties": {
         "serverFarmId": "[parameters('hostingPlanName')]",
         "siteConfig": {
-          "linuxFxVersion": "NODE|10.10",
+          "linuxFxVersion": "NODE|14-lts",
           "appCommandLine": "/home/site/wwwroot/app.js",
           "webSocketsEnabled": true,
           "alwaysOn": true

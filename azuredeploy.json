@@ -56,7 +56,8 @@
     },
     "branch": {
       "type": "string",
-      "defaultValue": "master",
+
+      "defaultValue": "premerged",
       "metadata": {
         "description": "The branch of the GitHub repository to use."
       }
