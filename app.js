@@ -2,16 +2,6 @@ var http = require('http');
 var express = require("express");
 var RED = require("node-red");
 
-// Workaround for finding npm related used node
-if (process.platform === 'win32') {
-    const { execSync } = require('child_process');
-    const nodeVersion = process.version.replace(/^v(.*)$/, '$1');
-    const npmTxtPath = `${process.env["PROGRAMFILES(x86)"]}\\nodejs\\${nodeVersion}\\npm.txt`;
-    const npmVersion = execSync(`type "${npmTxtPath}"`).toString().trim();
-    process.env.PATH = `${process.env["PROGRAMFILES(x86)"]}\\npm\\${npmVersion};${process.env.PATH}`;
-}
-// Workaround for finding npm related used node
-
 // Create an Express app
 var app = express();
 

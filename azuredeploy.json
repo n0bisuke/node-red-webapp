@@ -28,7 +28,12 @@
         "P1",
         "P2",
         "P3",
-        "P4"
+        "P1v2",
+        "P2v2",
+        "P3v2",
+        "P1v3",
+        "P2v3",
+        "P3v3"
       ],
       "defaultValue": "S1",
       "metadata": {
@@ -56,7 +61,6 @@
     },
     "branch": {
       "type": "string",
-
       "defaultValue": "premerged",
       "metadata": {
         "description": "The branch of the GitHub repository to use."
@@ -86,6 +90,7 @@
         "[resourceId('Microsoft.Web/serverfarms', parameters('hostingPlanName'))]"
       ],
       "properties": {
+        "state": "Stopped",
         "serverFarmId": "[parameters('hostingPlanName')]",
         "siteConfig": {
           "webSocketsEnabled": true,
@@ -94,11 +99,24 @@
       },
       "resources": [
         {
+          "type": "config",
           "apiVersion": "2015-08-01",
-          "name": "web",
-          "type": "sourcecontrols",
+          "name": "appsettings",
           "dependsOn": [
             "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
+          ],
+          "properties": {
+            "WEBSITE_NODE_DEFAULT_VERSION": "~14",
+            "WEBSITE_NPM_DEFAULT_VERSION": "6.14.4"
+          }
+        },
+        {
+          "type": "sourcecontrols",
+          "apiVersion": "2015-08-01",
+          "name": "web",
+          "dependsOn": [
+            "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]",
+            "[resourceId('Microsoft.Web/Sites/config', parameters('siteName'), 'appsettings')]"
           ],
           "properties": {
             "RepoUrl": "[parameters('repoURL')]",
