@@ -95,7 +95,7 @@
       "properties": {
         "serverFarmId": "[parameters('hostingPlanName')]",
         "siteConfig": {
-          "linuxFxVersion": "NODE|14-lts",
+          "linuxFxVersion": "NODE|20-lts",
           "appCommandLine": "node /home/site/wwwroot/app.js",
           "webSocketsEnabled": true,
           "alwaysOn": true
